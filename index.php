@@ -11,6 +11,7 @@
     <div id="header">
         <h1>Floxy Hair</h1>
     </div>
+    <!-- bar de navigation -->
     <div id="navbar">
         <ul>
             <li><a href="index.php">Accueil</a></li>
