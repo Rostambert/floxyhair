@@ -1,0 +1,260 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: black;
+    color: white;
+}
+
+#header h1{
+    text-align: center;
+}
+
+#navbar{
+    background-color: gray;
+    color: white;
+}
+
+#navbar a{
+    text-decoration: none;
+    color: white;
+}
+
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0px 10px;
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+    min-height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+#content img{
+    width: 50%;
+}
+
+#RDVButton, #buttonUser{
+    background:purple;
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    position: relative;
+}
+
+#RDVButton:hover{
+    background-color: tomato;
+}
+
+#footer{
+    background-color: black;
+    color: white;
+    min-height: 100px;
+}
+#listPrestations{
+    margin: 10px;
+    width: 90%;
+}
+#listPrestations, .itemPrestation, 
+.contentPrestation{
+    display: flex;
+    flex-direction: column;
+}
+
+.itemPrestation{
+    margin-bottom: 10px;
+}
+
+.contentPrestation{
+    display: none;
+}
+
+.titlePrestation{
+    display: flex;
+    flex-direction: row;
+    background-color: purple;
+    color: white;
+    border: 1px solid white;
+    flex: 1;
+    padding: 5px 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.titlePrestation h2{
+    flex: 1;
+}
+
+.contentPrestation{
+    background: grey;
+    color: white;
+    padding: 5px 10px;
+    border: 1px solid white;
+}
+
+.contentPrestation p + p{
+    text-align: right;
+    font-weight: bolder;
+}
+
+.fadeIn{
+    animation: fadeInAnimation normal 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#listUser{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.itemUser{
+    display: flex;
+    flex-direction: column;
+    background-color: purple;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.itemUser p {
+    display: flex;
+    flex: 1;
+}
+
+.infoUser{
+    display: flex;
+    flex-direction: row;
+}
+
+.infoUser span{
+    margin: 10px;
+}
+
+.infoUser img{
+    width: 150px !important;
+    border-radius: 20px;
+}
+
+.nameUser{
+    display: flex;
+    flex-direction: column;
+}
+
+.itemUser a{
+    padding:10px;
+    color: purple;
+    background-color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+#formUser{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#userAvatar{
+    width: 150px !important;
+    margin:10px
+}
+#formUser div{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+#formUser div span, #formUser div input, #formUser div textarea{
+    width: 50%;
+}
+
+#formRDV{
+    display: flex;
+    flex-direction: column;
+}
+
+#formRDV div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#formRDV input, 
+#formRDV select{
+    margin: 10px;
+    padding: 10px;
+}
+
+#divPriceTotal{
+    justify-content: end;
+}
+
+#listPrestation{
+    display: flex;
+    flex-direction: column !important;
+    align-items: normal !important;
+    margin: 10px 0px;
+}
+
+#listPrestation div{
+    display: flex;
+    flex-direction: row;
+}
+
+#listPrestation div span:first-child{
+    flex:3
+}
+#listPrestation div span{
+    flex:1
+}
+
+#LoginForms{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+#LoginForms form{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    border: 1px solid;
+    margin: 10px;
+}
+
+
+#LoginForms form input{
+    margin-bottom: 10px;
+}
